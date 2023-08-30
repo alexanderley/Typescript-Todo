@@ -15,10 +15,8 @@ function App() {
   };
 
   const removeTodoHandler = (todoId: string) => {
-    console.log("🙌 remove item!");
-    console.log("😂 todoId: ", todoId);
     setTodos((prevTodos) => {
-      const newArray = prevTodos.filter((item) => item.text !== todoId);
+      const newArray = prevTodos.filter((todo) => todo.id !== todoId);
       return newArray;
     });
   };
