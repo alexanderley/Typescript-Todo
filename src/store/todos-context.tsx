@@ -27,8 +27,7 @@ const TodosContextProvider: React.FC = (props) => {
 
   const removeTodoHandler = (todoId: string) => {
     setTodos((prevTodos) => {
-      const newArray = prevTodos.filter((todo) => todo.id !== todoId);
-      return newArray;
+      return prevTodos.filter((todo) => todo.id !== todoId);
     });
   };
 
